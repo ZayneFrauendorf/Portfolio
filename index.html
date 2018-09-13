@@ -24,8 +24,8 @@
         <header>
             <h1>Software Developer</h1>
             <p>Passionate about web development!
-                <br/>
-                <br/>Excited about modern front end technologies and truly dedicated to my craft.</p>
+                <br />
+                <br />Excited about modern front end technologies and truly dedicated to my craft.</p>
         </header>
 
         <div class="what-i-do">
@@ -68,31 +68,34 @@
             </div>
         </div>
         <div class="work-two">
-            <div class="container" onclick="showInfo(this)">
+            <div class="container" onclick="showInfoModule.showInfo(this)">
                 <img src="images/Project_01.png" alt="" class="image">
                 <div class="overlay">
                     <div class="text">
-                        Da Muks needed a way to sell products to customers and for their customers to easily and securely interact with Da Muks for
+                        Da Muks needed a way to sell products to customers and for their customers to easily and
+                        securely interact with Da Muks for
                         the purchase of honey.
-                        <br/>
-                        <br/> This app is being built with React, Redux, Sass and Headless Wordpress. This system is integrated
+                        <br />
+                        <br /> This app is being built with React, Redux, Sass and Headless Wordpress. This system is
+                        integrated
                         with a customized Snipcart to ensure secure transactions.
-                        <br/>
-                        <br/>
+                        <br />
+                        <br />
                         <a href="http://da-muks.netlify.com" target="_blank">See the current progress!</a>
                     </div>
                 </div>
             </div>
-            <div class="container" onclick="showInfo(this)">
+            <div class="container" onclick="showInfoModule.showInfo(this)">
                 <img src="images/QCDemoHigh.png" alt="" class="image">
                 <div class="overlay">
                     <div class="text">
-                        QC International needed a way to showcase their business with a unique idea of operating remotely and having low overheads
+                        QC International needed a way to showcase their business with a unique idea of operating
+                        remotely and having low overheads
                         to become extremely competitive in their market.
-                        <br/>
-                        <br/> This site was built with HTML, CSS and Wordpress and QC were a huge success!
-                        <br/>
-                        <br/> Please contact me for access to a demo version of this site.
+                        <br />
+                        <br /> This site was built with HTML, CSS and Wordpress and QC were a huge success!
+                        <br />
+                        <br /> Please contact me for access to a demo version of this site.
                     </div>
                 </div>
             </div>
@@ -108,42 +111,45 @@
                 <a href="mailto:zaynef@outlook.com" style="text-decoration: none; color: white;">Email Me</a>
             </li>
             <li>
-                <a href="https://www.linkedin.com/in/zayne-frauendorf-bba0b8141/" target="_blank" style="text-decoration: none; color: white;">Linked In</a>
+                <a href="https://www.linkedin.com/in/zayne-frauendorf-bba0b8141/" target="_blank" style="text-decoration: none; color: white;">Linked
+                    In</a>
             </li>
         </ul>
     </div>
 
     <div class="work">
 
-        <div class="container" onclick="showInfo(this)">
+        <div class="container" onclick="showInfoModule.showInfo(this)">
 
             <img src="images/Project_03.png" alt="" class="image">
 
             <div class="overlay">
                 <div class="text">
-                    Body Mechanics needed a professional but simple way to showcase their business aside from social media.
-                    <br/>
-                    <br/> Built with HTML, CSS and Javascript.
-                    <br/>
-                    <br/>
+                    Body Mechanics needed a professional but simple way to showcase their business aside from social
+                    media.
+                    <br />
+                    <br /> Built with HTML, CSS and Javascript.
+                    <br />
+                    <br />
                     <a href="http://bodymechanicsgym.co.nz" target="_blank">Check it out!</a>
                 </div>
             </div>
         </div>
 
-        <div class="container" onclick="showInfo(this)">
+        <div class="container" onclick="showInfoModule.showInfo(this)">
 
             <img src="images/Project_02.png" alt="" class="image">
 
             <div class="overlay">
                 <div class="text">
-                    Bay Worx needed a professional way to showcase their business and to remain competitive amongst competitive contractors.
-                    <br/>
-                    <br/> Built with HTML, CSS and Wordpress.
-                    <br/>
-                    <br/>
+                    Bay Worx needed a professional way to showcase their business and to remain competitive amongst
+                    competitive contractors.
+                    <br />
+                    <br /> Built with HTML, CSS and Wordpress.
+                    <br />
+                    <br />
                     <a href="http://bayworx.co.nz" target="_blank">Check it out!</a>
-                    <br/> (Not maintained by me)
+                    <br /> (Not maintained by me)
                 </div>
 
             </div>
@@ -151,19 +157,26 @@
 
     </div>
     <footer>
-        <p>Coypyright &copy Zayne Frauendorf <script>document.write(new Date().getFullYear())</script></p>
+        <p>Coypyright &copy Zayne Frauendorf -
+            <script>document.write(new Date().getFullYear())</script>
+        </p>
     </footer>
     </div>
     <script>
-        function showInfo(e) {
-            let overlay = e.lastElementChild;
+        var showInfoModule = (function () {
+            return {
+                showInfo: function (e) {
+                    let overlay = e.lastElementChild;
 
-            if (overlay.style.opacity == 0.9) {
-                overlay.style.opacity = 0;
-            } else {
-                overlay.style.opacity = 0.9;
+                    if (overlay.style.opacity == 0.9) {
+                        overlay.style.opacity = 0;
+                    } else {
+                        overlay.style.opacity = 0.9;
+                    }
+                }
             }
-        }
+        })();
+
     </script>
 </body>
 
